@@ -11,9 +11,14 @@ Created using the automatic page generator.
 @pandanautinspace
 
 #### Contact list:
-I'm part of @SST-CTF
-@stan-sst
-@tamir71
-@otakar-sst
-@EscapingGithub
-@cccfire
+I'm part of @SST-CTF  
+@stan-sst  
+
+@tamir71  
+
+@otakar-sst  
+
+@EscapingGithub  
+
+@cccfire  
+
