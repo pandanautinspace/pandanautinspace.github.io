@@ -1,5 +1,5 @@
 # Good morning, I'm Kenneth Browder.
-This is, in fact, the website of Kenneth Browder(@pandanautinspace). I am a sophomore computer science student at Grove City College, but I've been playing with computers for a while.
+This is, in fact, the website of Kenneth Browder(@pandanautinspace). I am a sophomore computer science student at Grove City College, but I've been playing with computers for a while. My [github](https://github.com/pandanautinspace).
 
 ## Projects
 I've worked on a few projects over the years. We have:
