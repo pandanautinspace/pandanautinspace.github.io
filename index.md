@@ -1,24 +1,15 @@
-# Welcome to the Website of Pandanautinspace!
-This is, in fact, the website of Pandanautinspace. There are some cool things I'm working on, but not many. One of them is [Turiqua-JS](https://pandanautinspace.github.io/turiqua-js).
+# Good morning, I am Kenneth Browder.
+This is, in fact, the website of Kenneth Browder(@pandanautinspace). I am a sophomore computer science student at Grove City College, but I've been playing with computers for a while.
 
-## Wow!
-You can contact me at [this!](pandanautinspace.github.io/contact.txt)
+## Projects
+I've worked on a few projects over the years. We have:
+folio / myJournal: My COMP220 Project, done with @Jaxaar and @ReviewEdge. It's a social journaling application, allowing you to follow and contribute to writing about topics close to your heart. MVP has been created.
 
-### Created
-Created using the automatic page generator.
+LittleYellowFileManager (LYFM): A submarined themed file management application, with a killer deep dive feature, so you can explore deeper into your file tree without ever losing track of where you were. Still in progress.
 
-### Authors and Contributors
-@pandanautinspace
+Beef / BeefVM: A programming language running on a virtual machine with only Brainf*** instructions. Still in progress.
 
-#### Contact list:
-I'm part of @SST-CTF  
-@stan-sst  
+AVP-HS: A group of high-school students at Portland State University working together to make an autonomous vehicle that can compete with college groups.
 
-@tamir71  
-
-@otakar-sst  
-
-@EscapingGithub  
-
-@cccfire  
-
+## Contact Me
+You can contact me at the email address printed [here](pandanautinspace.github.io/contact.txt).
