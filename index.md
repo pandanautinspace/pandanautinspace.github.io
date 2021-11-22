@@ -1,8 +1,9 @@
-# Good morning, I am Kenneth Browder.
+# Good morning, I'm Kenneth Browder.
 This is, in fact, the website of Kenneth Browder(@pandanautinspace). I am a sophomore computer science student at Grove City College, but I've been playing with computers for a while.
 
 ## Projects
 I've worked on a few projects over the years. We have:
+
 
 folio / myJournal: My COMP220 Project, done with @Jaxaar and @ReviewEdge. It's a social journaling application, allowing you to follow and contribute to writing about topics close to your heart. MVP has been created.
 
