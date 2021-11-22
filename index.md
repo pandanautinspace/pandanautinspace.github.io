@@ -3,6 +3,7 @@ This is, in fact, the website of Kenneth Browder(@pandanautinspace). I am a soph
 
 ## Projects
 I've worked on a few projects over the years. We have:
+
 folio / myJournal: My COMP220 Project, done with @Jaxaar and @ReviewEdge. It's a social journaling application, allowing you to follow and contribute to writing about topics close to your heart. MVP has been created.
 
 LittleYellowFileManager (LYFM): A submarined themed file management application, with a killer deep dive feature, so you can explore deeper into your file tree without ever losing track of where you were. Still in progress.
