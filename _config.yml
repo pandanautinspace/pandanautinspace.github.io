@@ -2,7 +2,7 @@ title: Mywebsite
 description: 
 google_analytics: 
 show_downloads: true
-remote_theme: jamigibbs/phantom
+remote_theme: kitian616/jekyll-TeXt-theme
 
 gems:
   - jekyll-mentions
