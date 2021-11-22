@@ -1,3 +1,2 @@
-# This is the website of @pandanautinspace
-It's pretty cool
-~~not really~~
+# Good morning, I'm Kenneth Browder
+It's always morning somewhere.
