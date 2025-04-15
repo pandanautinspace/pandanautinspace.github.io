@@ -1,0 +1,52 @@
+{
+    "basics": {
+      "name": "Kenneth Browder",
+      "label": "Master's Student",
+      "picture": "https://example.com/photo.jpg",
+      "email": "ken.d.browder@gmail.com",
+      "phone": "+33629217965",
+      "website": "https://thomasedison.com",
+      "summary": "(WIP)",
+      "location": {
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "countryCode": "",
+        "region": ""
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "kenneth-browder",
+          "url": "https://www.linkedin.com/in/kenneth-browder"
+        }
+      ],
+      "url": "https://pandanautinspace.github.io"
+    },
+    "work": [],
+    "volunteer": [],
+    "education": [],
+    "awards": [],
+    "publications": [],
+    "skills": [],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "French",
+        "fluency": "Fluent"
+      },
+      {
+        "language": "Russian",
+        "fluency": "Native Speaker"
+      },
+      {
+        "language": "Spanish",
+        "fluency": "Fluent"
+      }
+    ],
+    "interests": [],
+    "references": []
+  }

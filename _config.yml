@@ -1,9 +1,40 @@
-title: Pandanautinspace
-description: And this is Kenneth Browder's website.
-google_analytics: 
+title: Kenneth Browder
+domain: pandanautinspace.github.io
+url: https://pandanautinspace.github.io
+description: The personal website of Kenneth Browder.
+lang: en-US
 show_downloads: false
 remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
+email: kendbrowder@gmail.com
+author:
+  name: Dugan Nash
+  twitter: Towlette_Pettetucci
+  picture: /assets/images/linkedin_profile.jpg
+  bio: "I am a software engineer with a passion for building web applications and exploring new technologies. I love to learn and share my knowledge with others."
+  location: "Paris, France"
+github_username: pandanautinspace
 
-gems:
-  - jekyll-mentions
+plugins:
+  # - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  # - jekyll-paginate
+# feed:
+#   path: atom.xml
 
+# paginate: 10
+# paginate_path: /page:num/
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  # _posts
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: post
+      read_time: false
