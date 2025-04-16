@@ -1,8 +1,13 @@
 ---
 title: Iranian License Plate Recognition System Using LSTM
 date: 2025-03-24
-excerpt: Description in progress
+excerpt: Implementation and improvement of system to automatically detect and read Iranian license plates in video.
 tags: 
-  - Guided Diffusion
-  - OpenAI
+  - Computer Vision
+  - YOLO
+  - Transformers
+  - LSTM
+  - Deep Learning
 ---
+
+Implementation and improvement of system to automatically detect and read Iranian license plates in video.
