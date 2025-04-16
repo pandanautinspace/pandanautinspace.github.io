@@ -7,8 +7,7 @@ show_downloads: false
 remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 email: kendbrowder@gmail.com
 author:
-  name: Dugan Nash
-  twitter: Towlette_Pettetucci
+  name: Kenneth Browder
   picture: /assets/images/linkedin_profile.jpg
   bio: "I am a software engineer with a passion for building web applications and exploring new technologies. I love to learn and share my knowledge with others."
   location: "Paris, France"
@@ -18,12 +17,12 @@ plugins:
   # - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  # - jekyll-paginate
+  - jekyll-paginate
 # feed:
 #   path: atom.xml
 
-# paginate: 10
-# paginate_path: /page:num/
+paginate: 10
+paginate_path: /page:num/
 
 collections:
   projects:
