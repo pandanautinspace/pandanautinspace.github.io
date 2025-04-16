@@ -1,52 +1,116 @@
 {
-    "basics": {
-      "name": "Kenneth Browder",
-      "label": "Master's Student",
-      "picture": "https://example.com/photo.jpg",
-      "email": "ken.d.browder@gmail.com",
-      "phone": "+33629217965",
-      "website": "https://thomasedison.com",
-      "summary": "(WIP)",
-      "location": {
-        "address": "",
-        "postalCode": "",
-        "city": "",
-        "countryCode": "",
-        "region": ""
-      },
-      "profiles": [
-        {
-          "network": "LinkedIn",
-          "username": "kenneth-browder",
-          "url": "https://www.linkedin.com/in/kenneth-browder"
-        }
-      ],
-      "url": "https://pandanautinspace.github.io"
+  "$schema": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
+  "basics": {
+    "name": "Kenneth Browder",
+    "label": "Master's Student",
+    "email": "ken.d.browder@gmail.com",
+    "phone": "+33629217965",
+    "url": "https://pandanautinspace.github.io",
+    "summary": "Multidisciplinary software engineer and master’s student at Institut Polytechnique de Paris, with strong experience in graphics, web development, and intelligent systems. Passionate about creating accessible, interactive tools that merge design with deep technology. Currently seeking an internship to contribute to impactful research and user-facing tools.",
+    "location": {
+      "address": "",
+      "postalCode": "75116",
+      "city": "Paris",
+      "countryCode": "France",
+      "region": ""
     },
-    "work": [],
-    "volunteer": [],
-    "education": [],
-    "awards": [],
-    "publications": [],
-    "skills": [],
-    "languages": [
+    "profiles": [
       {
-        "language": "English",
-        "fluency": "Native speaker"
-      },
-      {
-        "language": "French",
-        "fluency": "Fluent"
-      },
-      {
-        "language": "Russian",
-        "fluency": "Native Speaker"
-      },
-      {
-        "language": "Spanish",
-        "fluency": "Fluent"
+        "network": "LinkedIn",
+        "username": "kenneth-browder",
+        "url": "https://www.linkedin.com/in/kenneth-browder"
       }
     ],
-    "interests": [],
-    "references": []
+    "picture": "https://pandanautinspace.github.io/assets/images/linkedin_profile.jpg"
+  },
+  "work": [
+    {
+      "name": "SIL Global",
+      "location": "",
+      "description": "",
+      "position": "Software Engineer Intern",
+      "url": "",
+      "startDate": "2024-05-23",
+      "endDate": "2024-09-06",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Carnegie Mellon University Human Computer Interaction Institute",
+      "location": "",
+      "description": "",
+      "position": "Undergraduate Student Researcher",
+      "url": "",
+      "startDate": "2023-05-23",
+      "endDate": "2023-09-01",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "United States Nuclear Regulatory Commission",
+      "location": "",
+      "description": "",
+      "position": "Technical Intern",
+      "url": "",
+      "startDate": "2022-07-01",
+      "endDate": "2022-10-01",
+      "summary": ""
+    },
+    {
+      "name": "Lockheed Martin RMS",
+      "location": "",
+      "description": "",
+      "position": "Software Engineer Intern",
+      "url": "",
+      "startDate": "2022-05-23",
+      "endDate": "2022-09-01",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Télécom Paris and École Polytechnique",
+      "url": "",
+      "area": "Interaction, Graphics, and Design",
+      "studyType": "Master",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Grove City College",
+      "url": "",
+      "area": "Computer Science and Mathematics",
+      "studyType": "Bachelor of Science",
+      "startDate": "2020-08-16",
+      "endDate": "2024-05-20",
+      "score": "3.93",
+      "courses": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Fluent (C1)"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
+    "version": "v2.0.0",
+    "lastModified": "2025-04-16T18:51:02+02:00Z"
   }
+}
