@@ -1,39 +1,46 @@
 title: Kenneth Browder
-domain: pandanautinspace.github.io
-url: https://pandanautinspace.github.io
-description: The personal website of Kenneth Browder.
+description: Kenneth Browder — research assistant at the MIT Media Lab working across computer graphics, physical simulation, and AI.
+url: https://kennethb.me
 lang: en-US
-show_downloads: false
-remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 email: kendbrowder@gmail.com
+github_username: pandanautinspace
 author:
   name: Kenneth Browder
   picture: /assets/images/linkedin_profile.jpg
-  bio: "I am a software engineer with a passion for building web applications and exploring new technologies. I love to learn and share my knowledge with others."
-  location: "Paris, France"
-github_username: pandanautinspace
+
+social:
+  github: https://github.com/pandanautinspace
+  linkedin: https://www.linkedin.com/in/kenneth-browder/
+  orcid: https://orcid.org/0009-0004-2490-3770
 
 plugins:
-  # - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
-# feed:
-#   path: atom.xml
 
-paginate: 10
-paginate_path: /page:num/
+markdown: kramdown
+kramdown:
+  input: GFM
 
 collections:
   projects:
     output: true
-    permalink: /:collection/:path/
+    permalink: /projects/:path/
 
 defaults:
-  # _posts
   - scope:
-      path: "_projects"
+      path: ""
       type: projects
     values:
-      layout: post
-      read_time: false
+      layout: project
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image: /assets/images/banner.png
+
+exclude:
+  - interview_transcript_brief.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

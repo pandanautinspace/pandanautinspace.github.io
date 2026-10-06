@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="project">
+  <a class="back" href="{{ '/#work' | relative_url }}">← All work</a>
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="lede">{{ page.subtitle }}</p>{% endif %}
+  <p class="meta">
+    {% if page.status %}{{ page.status }}{% else %}{{ page.date | date: '%B %Y' }}{% endif %}
+    {% if page.context %} · {{ page.context }}{% endif %}
+  </p>
+  {% if page.tags.size > 0 %}
+  <ul class="tags">{% for t in page.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+  {% endif %}
+  {% if page.video %}
+    <video class="hero" src="{{ page.video | relative_url }}" autoplay loop muted playsinline></video>
+  {% elsif page.image %}
+    <img class="hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  {% endif %}
+  <div class="prose">{{ content }}</div>
+  {% if page.links %}
+  <ul class="links">
+    {% for l in page.links %}<li><a href="{{ l.url }}">{{ l.label }} ↗</a></li>{% endfor %}
+  </ul>
+  {% endif %}
+</article>

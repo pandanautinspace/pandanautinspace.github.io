@@ -1,10 +1,13 @@
 ---
-title: Physical Simulation for Enhancement of Novice Animation [paused]
+title: Physical Simulation for Novice Animation
 date: 2025-08-01
-excerpt: Ongoing research in use of physical simulation for enhancement of 3D animations created by unskilled novices.
-tags: 
-  - Physical Simulation
-  - Computer Graphics
-  - Geometry Processing
+status: Paused
+kind: Research
+excerpt: Using physical simulation to enhance 3D animations made by non-experts.
+tags:
+- Physical Simulation
+- Computer Graphics
+- Geometry Processing
 ---
-Ongoing research in use of physical simulation for enhancement of 3D animations created by unskilled novices.
+
+Research into using physical simulation and geometry processing to automatically enhance 3D animations created by novices. Currently paused.

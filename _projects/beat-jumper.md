@@ -1,10 +1,11 @@
 ---
-title: 2D Games Project - Beat Jumper
+title: Beat Jumper
 date: 2024-02-01
+kind: Game
 excerpt: A rhythm synced platformer game made for 2D games course.
-tags: 
-  - Unity
-  - 2D Games
+tags:
+- Unity
+- 2D Games
 ---
 
 A rhythm synced platformer game made for 2D games course.

@@ -1,0 +1,16 @@
+---
+title: All work
+permalink: /projects/
+---
+<article class="page">
+  <h1 class="page-title">All work</h1>
+  {% assign all = site.projects | sort: "date" | reverse %}
+  <ul class="rows">
+    {% for p in all %}
+    <li>
+      <span class="row-when">{% if p.status %}{{ p.status }}{% else %}{{ p.date | date: '%Y' }}{% endif %}</span>
+      <a class="row-what" href="{{ p.url | relative_url }}">{{ p.title }}{% if p.kind %} <span class="muted">· {{ p.kind }}</span>{% endif %}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</article>

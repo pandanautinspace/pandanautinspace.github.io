@@ -2,37 +2,50 @@
   "$schema": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
   "basics": {
     "name": "Kenneth Browder",
-    "label": "Master's Student",
-    "email": "ken.d.browder@gmail.com",
-    "phone": "+33629217965",
-    "url": "https://pandanautinspace.github.io",
-    "summary": "Multidisciplinary software engineer and master’s student at Institut Polytechnique de Paris, with strong experience in graphics, web development, and intelligent systems. Passionate about creating accessible, interactive tools that merge design with deep technology. Currently seeking an internship to contribute to impactful research and user-facing tools.",
+    "label": "Research Assistant, MIT Media Lab",
+    "email": "kendbrowder@gmail.com",
+    "url": "https://kennethb.me",
+    "summary": "Research assistant and master's student in the Viral Communications group at the MIT Media Lab. I work across computer graphics, physical simulation, and machine learning, building interactive tools that put deep technology in the hands of creative people.",
     "location": {
-      "address": "",
-      "postalCode": "75116",
-      "city": "Paris",
-      "countryCode": "France",
-      "region": ""
+      "city": "Cambridge",
+      "region": "MA",
+      "countryCode": "US"
     },
     "profiles": [
       {
         "network": "LinkedIn",
         "username": "kenneth-browder",
         "url": "https://www.linkedin.com/in/kenneth-browder"
+      },
+      {
+        "network": "GitHub",
+        "username": "pandanautinspace",
+        "url": "https://github.com/pandanautinspace"
       }
     ],
-    "picture": "https://pandanautinspace.github.io/assets/images/linkedin_profile.jpg"
+    "picture": "https://kennethb.me/assets/images/linkedin_profile.jpg"
   },
   "work": [
     {
-      "name": "PixAI.fr",
+      "name": "MIT Media Lab, Viral Communications",
+      "position": "Research Assistant",
+      "url": "https://www.media.mit.edu/groups/viral-communications/overview/",
+      "startDate": "2026-09-01",
+      "summary": "Graduate research assistant advised by Andy Lippman.",
+      "highlights": []
+    },
+    {
+      "name": "PixAI",
       "location": "",
       "description": "",
       "position": "Machine Learning Engineer Intern",
       "url": "https://pixai.fr",
       "startDate": "2025-05-01",
-      "summary": "",
-      "highlights": []
+      "summary": "Machine learning engineering internship (master's thesis internship).",
+      "highlights": [
+        "Developed a reference-free method for measuring interpupillary distance (IPD) and other key eye measurements, and built a proof-of-concept web app around it."
+      ],
+      "endDate": "2026-08-31"
     },
     {
       "name": "SIL Global",
@@ -46,7 +59,7 @@
       "highlights": []
     },
     {
-      "name": "Carnegie Mellon University Human Computer Interaction Institute",
+      "name": "Human-Computer Interaction Institute, Carnegie Mellon University",
       "location": "",
       "description": "",
       "position": "Undergraduate Student Researcher",
@@ -57,7 +70,7 @@
       "highlights": []
     },
     {
-      "name": "United States Nuclear Regulatory Commission",
+      "name": "U.S. Nuclear Regulatory Commission",
       "location": "",
       "description": "",
       "position": "Technical Intern",
@@ -80,14 +93,24 @@
   ],
   "education": [
     {
-      "institution": "Télécom Paris and École Polytechnique",
+      "institution": "Massachusetts Institute of Technology, MIT Media Lab",
+      "area": "Media Arts and Sciences",
+      "studyType": "Master of Science",
+      "startDate": "2026-09-01",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Institut Polytechnique de Paris (Télécom Paris & École Polytechnique)",
       "url": "",
       "area": "Interaction, Graphics, and Design",
       "studyType": "Master",
       "startDate": "2024-09-01",
-      "endDate": "",
+      "endDate": "2026-12-31",
       "score": "",
-      "courses": []
+      "courses": [],
+      "note": "Thesis defense upcoming."
     },
     {
       "institution": "Grove City College",
@@ -107,7 +130,7 @@
     },
     {
       "language": "Russian",
-      "fluency": "Native Speaker"
+      "fluency": "Native speaker"
     },
     {
       "language": "French",
@@ -121,6 +144,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
     "version": "v2.0.0",
-    "lastModified": "2025-04-16T18:51:02+02:00Z"
+    "lastModified": "2026-10-06"
   }
 }
