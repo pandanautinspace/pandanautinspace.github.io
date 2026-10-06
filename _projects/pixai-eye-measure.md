@@ -2,7 +2,7 @@
 title: Reference-Free Eye Measurement
 subtitle: Measuring IPD and other eye measurements from a camera, with no reference object.
 date: 2026-03-01
-featured: 4
+featured: 5
 kind: Industry
 context: ML Engineer Intern, PixAI
 excerpt: A new method for measuring interpupillary distance and other key eye measurements without a reference object, shipped as a proof-of-concept web app.
