@@ -41,7 +41,7 @@
       "position": "Machine Learning Engineer",
       "url": "https://pixai.fr",
       "startDate": "2025-05-01",
-      "summary": "Master's thesis internship, extended through September 2026.",
+      "summary": "Internship, extended through September 2026.",
       "highlights": [
         "Built much of the frontend and backend of PixAI's conversational creative assistant: brief planning, parallel creative directions with live streaming, batch generation, and brand house styles with a moodboard editor.",
         "Developed a reference-free method for measuring interpupillary distance (IPD) and other eye measurements, with a proof-of-concept web app."
@@ -108,10 +108,9 @@
       "area": "Interaction, Graphics, and Design",
       "studyType": "Master",
       "startDate": "2024-09-01",
-      "endDate": "2026-12-31",
+      "endDate": "2026-08-31",
       "score": "",
-      "courses": [],
-      "note": "Thesis defense upcoming."
+      "courses": []
     },
     {
       "institution": "Grove City College",

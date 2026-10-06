@@ -8,12 +8,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='20' r='9' fill='%23e0763b'/><rect x='0' y='22' width='32' height='10' fill='%23faf8f4'/></svg>">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='26'%3E%E2%98%80%EF%B8%8F%3C/text%3E%3C/svg%3E">
 </head>
 <body>
   <div class="wrap">
     <header class="site-header">
-      <a class="wordmark" href="{{ '/' | relative_url }}">Kenneth Browder</a>
+      {% if page.url == '/' %}<span></span>{% else %}<a class="wordmark" href="{{ '/' | relative_url }}">KennethB.me</a>{% endif %}
       <nav>
         <a href="{{ '/#work' | relative_url }}">Work</a>
         <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} aria-current="page"{% endif %}>CV</a>

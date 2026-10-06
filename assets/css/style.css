@@ -1,4 +1,13 @@
 /* kennethb.me — minimal, warm, morning */
+/* Helsa Display: drop the licensed webfont files into /assets/fonts/ (see README). Until then it
+   falls back to a locally-installed copy, then Newsreader. */
+@font-face {
+  font-family: "Helsa Display";
+  src: local("Helsa Display"), local("HelsaDisplay-Regular"),
+       url("../fonts/HelsaDisplay-Regular.woff2") format("woff2"),
+       url("../fonts/HelsaDisplay-Regular.woff") format("woff");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
 :root {
   --bg: #faf8f4;
   --fg: #1d1b18;
@@ -7,6 +16,7 @@
   --accent: #c8582a;
   --accent-soft: #f6e3d6;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --display: "Helsa Display", "Newsreader", Georgia, serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --measure: 40rem;
 }
@@ -35,19 +45,21 @@ a:hover { color: var(--accent); }
 .wrap { max-width: var(--measure); margin: 0 auto; padding: 0 20px; }
 
 /* header / footer */
-.site-header { display: flex; justify-content: space-between; align-items: baseline; padding: 2.25rem 0 3.5rem; font: 500 .8125rem/1 var(--mono); letter-spacing: .02em; }
+.site-header { display: flex; justify-content: space-between; align-items: baseline; padding: 2.25rem 0 3rem; font: 400 1rem/1 var(--serif); }
+.wordmark { font-family: var(--display); font-size: 1.15rem; }
 .wordmark { text-decoration: none; }
-.site-header nav a { margin-left: 1.25rem; text-decoration: none; color: var(--muted); }
+.site-header nav a { margin-left: 1.5rem; text-decoration: none; color: var(--muted); }
 .site-header nav a:hover, .site-header nav a[aria-current] { color: var(--fg); }
 .site-footer { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: space-between; margin-top: 5rem; padding: 1.5rem 0 3rem; border-top: 1px solid var(--line); font: .75rem/1.4 var(--mono); color: var(--muted); }
 .footer-links a { margin-left: 1rem; text-decoration: none; }
 
 /* intro */
 .intro { position: relative; }
-.portrait { float: right; width: 92px; height: 92px; border-radius: 50%; object-fit: cover; margin: .25rem 0 1rem 1.5rem; filter: saturate(.9); }
-.greeting { font-weight: 400; font-size: clamp(2.6rem, 7vw, 3.5rem); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 .5rem; }
+.portrait { float: right; width: 84px; height: 84px; border-radius: 50%; object-fit: cover; margin: .25rem 0 1rem 1.5rem; filter: saturate(.9); }
+.masthead { font: 400 clamp(3rem, 15vw, 6.4rem)/.9 var(--display); letter-spacing: -.035em; margin: 0 0 3rem; white-space: nowrap; }
+.greeting { font-family: var(--display); font-weight: 400; font-size: clamp(2.1rem, 6vw, 2.75rem); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 .5rem; }
 .clock { font: .8125rem/1.4 var(--mono); color: var(--muted); margin: 0 0 2rem; min-height: 1.4em; }
-.clock .sun { color: var(--accent); }
+.sun-emoji { font-size: .8em; }
 .bio { margin: 0 0 1.1rem; }
 
 /* sections */
@@ -67,13 +79,13 @@ section { margin-top: 4rem; clear: both; }
 .feature { display: block; text-decoration: none; }
 .feature img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px; margin-bottom: .9rem; background: var(--line); }
 .feature-meta { display: block; font: .75rem/1.4 var(--mono); color: var(--muted); margin-bottom: .2rem; }
-.feature-title { display: block; font-size: 1.5rem; line-height: 1.25; letter-spacing: -.01em; }
+.feature-title { display: block; font-family: var(--display); font-size: 1.5rem; line-height: 1.25; letter-spacing: -.01em; }
 .feature:hover .feature-title { color: var(--accent); }
 .feature-text { display: block; color: var(--muted); margin-top: .25rem; }
 
 /* pages & projects */
 .back { font: .8125rem/1 var(--mono); color: var(--muted); text-decoration: none; }
-.page-title { font-weight: 400; font-size: clamp(2rem, 5.5vw, 2.6rem); line-height: 1.12; letter-spacing: -.015em; margin: 1.25rem 0 .75rem; }
+.page-title { font-family: var(--display); font-weight: 400; font-size: clamp(2rem, 5.5vw, 2.6rem); line-height: 1.12; letter-spacing: -.015em; margin: 1.25rem 0 .75rem; }
 .lede { font-size: 1.3rem; line-height: 1.45; color: var(--muted); margin: 0 0 1rem; }
 .meta { font: .8125rem/1.5 var(--mono); color: var(--muted); margin: 0 0 .75rem; }
 .tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 2rem; }

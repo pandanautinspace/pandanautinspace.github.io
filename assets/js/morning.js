@@ -18,10 +18,10 @@
     return new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit', timeZone: tz }).format(new Date()).toLowerCase();
   }
   var h = new Date().getHours();
-  if (h >= 5 && h < 12) { el.innerHTML = '<span class="sun">●</span> It actually is morning where you are. Nice.'; return; }
+  if (h >= 5 && h < 12) { el.innerHTML = 'It actually is morning where you are. Nice.'; return; }
   var options = cities.filter(function (c) { var x = hour(c[1]); return x >= 7 && x < 11; });
   if (!options.length) options = cities.filter(function (c) { var x = hour(c[1]); return x >= 5 && x < 12; });
   if (!options.length) return;
   var c = options[Math.floor(Math.random() * options.length)];
-  el.innerHTML = '<span class="sun">●</span> It’s ' + time(c[1]) + ' in ' + c[0] + '. Always morning somewhere.';
+  el.innerHTML = 'It’s ' + time(c[1]) + ' in ' + c[0] + '. Always morning somewhere.';
 })();

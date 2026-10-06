@@ -5,7 +5,7 @@ status: Ongoing
 featured: 1
 kind: Research
 context: IP Paris
-excerpt: How physically believable are AI-generated videos, and can we measure and improve it?
+excerpt: A benchmark that scores image-to-video and world models on physics in metric units, not on how good the pixels look.
 tags:
 - Physical Simulation
 - Computer Graphics
@@ -23,5 +23,9 @@ As part of this I built **scene-sim-benchmark**, a benchmark for generative visi
 that uses Unity scenes as ground-truth baselines. Because the scene is simulated, we know what
 *should* happen, and we can score how far a model's output drifts from physically correct
 motion.
+
+The current version is a **physical-accuracy benchmark for image-to-video and world models**.
+It scores generated video on physics *in metric units*, comparing measured motion against
+simulated ground truth rather than judging how realistic the pixels look.
 
 <!-- TODO: 2–3 sentences on your actual approach (metric? simulation-in-the-loop? dataset?) and one figure or GIF comparing a plausible vs. implausible clip. -->

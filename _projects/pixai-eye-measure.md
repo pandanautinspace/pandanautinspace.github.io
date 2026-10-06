@@ -16,4 +16,9 @@ optician or a reference object of known size in the frame, like a credit card he
 forehead. During my internship at [PixAI](https://pixai.fr) I developed a **reference-free**
 method for estimating these measurements, and built a proof-of-concept web app around it.
 
-<!-- TODO: what makes it work (geometry / depth / landmarks?), how accurate it got vs. ground truth, and a screenshot of the web app. Keep anything confidential out. -->
+The trick is to use a reference everyone already carries: the **iris**, which is about
+12 mm across in nearly all adults. A React app runs MediaPipe's face landmarker in the
+browser, finds the irises, and uses their apparent size to convert pixel distances into
+millimetres. No card, ruler or depth camera needed.
+
+<!-- TODO: accuracy vs. ground truth, and a screenshot of the web app. -->
