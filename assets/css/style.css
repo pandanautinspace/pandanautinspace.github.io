@@ -56,7 +56,7 @@ a:hover { color: var(--accent); }
 /* intro */
 .intro { position: relative; }
 .portrait { float: right; width: 84px; height: 84px; border-radius: 50%; object-fit: cover; margin: .25rem 0 1rem 1.5rem; filter: saturate(.9); }
-.masthead { font: 400 clamp(3rem, 15vw, 6.4rem)/.9 var(--display); letter-spacing: -.035em; margin: 0 0 3rem; white-space: nowrap; }
+.masthead { font: 400 clamp(3.5rem, 19vw, 8rem)/.9 var(--display); letter-spacing: -.035em; margin: 0 0 3rem; white-space: nowrap; }
 .greeting { font-family: var(--display); font-weight: 400; font-size: clamp(2.1rem, 6vw, 2.75rem); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 .5rem; }
 .clock { font: .8125rem/1.4 var(--mono); color: var(--muted); margin: 0 0 2rem; min-height: 1.4em; }
 .sun-emoji { font-size: .8em; }
