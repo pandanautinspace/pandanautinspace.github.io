@@ -28,4 +28,16 @@ The current version is a **physical-accuracy benchmark for image-to-video and wo
 It scores generated video on physics *in metric units*, comparing measured motion against
 simulated ground truth rather than judging how realistic the pixels look.
 
+## How the benchmark works
+
+- **Scenes.** Physics scenarios built in Unity, each targeting one physical notion. Each one
+  comes in several *settings* (physical parameters) and *variants* (textures, background,
+  lighting).
+- **Observers.** Vision modules written per scene type that track the relevant physical
+  quantities in generated video, condense them into a score, and flag when their own
+  assumptions are violated.
+- **Generation.** Each model gets the scene's first frame and physical setup, prompted
+  according to its own best practices and sampled many times. I tested 5–6 open models
+  plus a reduced set on closed models like Veo and Kling.
+
 <!-- TODO: 2–3 sentences on your actual approach (metric? simulation-in-the-loop? dataset?) and one figure or GIF comparing a plausible vs. implausible clip. -->

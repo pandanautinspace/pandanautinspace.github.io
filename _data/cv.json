@@ -38,13 +38,15 @@
       "name": "PixAI",
       "location": "",
       "description": "",
-      "position": "Machine Learning Engineer",
+      "position": "ML / Full-Stack Engineer",
       "url": "https://pixai.fr",
       "startDate": "2025-05-01",
       "summary": "Internship, extended through September 2026.",
       "highlights": [
         "Built much of the frontend and backend of PixAI's conversational creative assistant: brief planning, parallel creative directions with live streaming, batch generation, and brand house styles with a moodboard editor.",
-        "Developed a reference-free method for measuring interpupillary distance (IPD) and other eye measurements, with a proof-of-concept web app."
+        "Led a platform redesign from Figma through implementation, and designed an editor application that unifies separate workflows into one photo-editor-style tool.",
+        "R&D: evaluated state-of-the-art generative models and integrated them into the product.",
+        "Prototyped a reference-free eye-measurement tool that combines several models to measure IPD and other facial dimensions without a scale reference."
       ],
       "endDate": "2026-09-30"
     },
@@ -67,7 +69,7 @@
       "url": "",
       "startDate": "2023-05-23",
       "endDate": "2023-09-01",
-      "summary": "",
+      "summary": "Built a design tool for self-actuated metamaterial mechanisms (SVG motion paths to cell layouts, with physical simulation) and validated it on 3D-printed, Arduino-actuated prototypes.",
       "highlights": []
     },
     {
@@ -110,7 +112,8 @@
       "startDate": "2024-09-01",
       "endDate": "2026-08-31",
       "score": "",
-      "courses": []
+      "courses": [],
+      "note": "PhD Track scholarship."
     },
     {
       "institution": "Grove City College",
@@ -120,7 +123,8 @@
       "startDate": "2020-08-16",
       "endDate": "2024-05-20",
       "score": "3.93",
-      "courses": []
+      "courses": [],
+      "note": "Summa cum laude."
     }
   ],
   "languages": [
