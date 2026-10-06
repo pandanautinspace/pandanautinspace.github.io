@@ -6,6 +6,8 @@ status: Paused
 kind: Research
 context: IP Paris
 excerpt: Extracting skeletons from animal-like meshes and running stylized simulations on them, so that rough keyframe animation picks up squash, stretch and follow-through.
+gallery:
+- { file: anim-stylization-sphere.mp4, label: Stylized motion on a simple shape }
 tags:
 - Character Animation
 - Physical Simulation
@@ -34,4 +36,3 @@ It's a research prototype. The cube-lattice FFD works best on simple shapes, and
 parameter choices are driven by intuition rather than theory. The next steps would be to
 formalise *why* a given parameter produces a given effect, and to cover more of the 12
 principles.
-<!-- TODO: add one of the SpringAnimation screen captures (May 2025). -->
