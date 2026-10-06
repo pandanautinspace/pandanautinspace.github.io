@@ -43,7 +43,9 @@ image: /assets/images/banner.png
     {% for p in featured %}
     <li>
       <a class="feature" href="{{ p.url | relative_url }}">
-        {% if p.image %}<img src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
+        {% assign pj = '/assets/projects/' | append: p.slug | append: '.jpg' %}
+        {% assign has_pj = site.static_files | where: "path", pj | size %}
+        {% if has_pj > 0 %}<img src="{{ pj | relative_url }}" alt="" loading="lazy">{% endif %}
         <span class="feature-meta">{% if p.status %}{{ p.status }}{% else %}{{ p.date | date: '%Y' }}{% endif %}{% if p.kind %} · {{ p.kind }}{% endif %}</span>
         <span class="feature-title">{{ p.title }}</span>
         <span class="feature-text">{{ p.excerpt | strip_html | strip }}</span>

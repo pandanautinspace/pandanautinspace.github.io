@@ -6,6 +6,14 @@ featured: 1
 kind: Research
 context: IP Paris
 excerpt: A benchmark that scores image-to-video and world models on physics in metric units, not on how good the pixels look.
+gallery:
+- { file: physics-unity.mp4, label: Unity (ground truth) }
+- { file: physics-veo3-fast.mp4, label: Veo 3 Fast }
+- { file: physics-kling-2.5-turbo.mp4, label: Kling 2.5 Turbo }
+- { file: physics-seedance.mp4, label: Seedance }
+- { file: physics-wan-2.5.mp4, label: Wan 2.5 }
+- { file: physics-wan-2.1.mp4, label: Wan 2.1 }
+- { file: physics-hailuo-02-fast.mp4, label: Hailuo 02 Fast }
 tags:
 - Physical Simulation
 - Computer Graphics
