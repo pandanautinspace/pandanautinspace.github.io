@@ -2,13 +2,15 @@
 title: Jungle Mall
 subtitle: Turning online shopping into a social experience.
 date: 2025-10-15
-featured: 6
 kind: Course project
 context: Advanced UI, IP Paris
 excerpt: A Chrome extension that re-visualizes Amazon marketplace data to make online shopping social.
 tags:
 - Human Computer Interaction
 - Chrome Extension
+links:
+- label: Code
+  url: https://github.com/pandanautinspace/amazon-marketplace-visualizer
 ---
 
 Online shopping is a solitary list of search results. Jungle Mall is a Chrome extension built for

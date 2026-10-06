@@ -38,14 +38,15 @@
       "name": "PixAI",
       "location": "",
       "description": "",
-      "position": "Machine Learning Engineer Intern",
+      "position": "Machine Learning Engineer",
       "url": "https://pixai.fr",
       "startDate": "2025-05-01",
-      "summary": "Machine learning engineering internship (master's thesis internship).",
+      "summary": "Master's thesis internship, extended through September 2026.",
       "highlights": [
-        "Developed a reference-free method for measuring interpupillary distance (IPD) and other key eye measurements, and built a proof-of-concept web app around it."
+        "Built much of the frontend and backend of PixAI's conversational creative assistant: brief planning, parallel creative directions with live streaming, batch generation, and brand house styles with a moodboard editor.",
+        "Developed a reference-free method for measuring interpupillary distance (IPD) and other eye measurements, with a proof-of-concept web app."
       ],
-      "endDate": "2026-08-31"
+      "endDate": "2026-09-30"
     },
     {
       "name": "SIL Global",

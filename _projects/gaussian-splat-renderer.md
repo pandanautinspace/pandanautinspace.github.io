@@ -1,7 +1,7 @@
 ---
 title: Gaussian Splatting on Integrated GPUs
 date: 2025-04-03
-featured: 4
+featured: 6
 kind: Course project
 context: IP Paris
 excerpt: Comparing rendering strategies for 3D Gaussian Splats on integrated graphics hardware, in OpenGL with compute shaders.

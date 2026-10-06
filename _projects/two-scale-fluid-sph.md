@@ -1,7 +1,7 @@
 ---
 title: Two-Scale SPH Fluids
 date: 2025-02-24
-featured: 5
+featured: 7
 kind: Course project
 context: Fundamentals of Computer Graphics, IP Paris
 excerpt: Implementing and analyzing a classic two-scale improvement to Smoothed Particle Hydrodynamics fluid simulation.

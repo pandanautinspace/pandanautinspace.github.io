@@ -19,4 +19,9 @@ This ongoing project looks at ways to **measure** physical plausibility in gener
 **push** generators toward more physically consistent results, drawing on my background in
 physical simulation and graphics.
 
+As part of this I built **scene-sim-benchmark**, a benchmark for generative vision models
+that uses Unity scenes as ground-truth baselines. Because the scene is simulated, we know what
+*should* happen, and we can score how far a model's output drifts from physically correct
+motion.
+
 <!-- TODO: 2–3 sentences on your actual approach (metric? simulation-in-the-loop? dataset?) and one figure or GIF comparing a plausible vs. implausible clip. -->

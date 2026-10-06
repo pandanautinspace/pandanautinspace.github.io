@@ -2,7 +2,7 @@
 title: Depth of Fun
 subtitle: Comparing real-time depth-of-field rendering methods.
 date: 2026-02-01
-featured: 3
+featured: 5
 kind: Course project
 context: Advanced 3D Graphics, IP Paris
 excerpt: Implementing and comparing real-time depth-of-field techniques in Unity, trading off quality against speed.
