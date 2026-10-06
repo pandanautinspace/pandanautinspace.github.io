@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='26'%3E%E2%98%80%EF%B8%8F%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      {% if page.url == '/' %}<span></span>{% else %}<a class="wordmark" href="{{ '/' | relative_url }}">kenneth b</a>{% endif %}
+      <nav>
+        <a href="{{ '/#work' | relative_url }}">Work</a>
+        <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} aria-current="page"{% endif %}>CV</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      </nav>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <span>© {{ site.time | date: '%Y' }} Kenneth Browder</span>
+      <span class="footer-links">
+        <a href="mailto:{{ site.email }}">Email</a>
+        <a href="{{ site.social.github }}">GitHub</a>
+        <a href="{{ site.social.linkedin }}">LinkedIn</a>
+        <a href="{{ site.social.orcid }}">ORCID</a>
+      </span>
+    </footer>
+  </div>
+  <script src="{{ '/assets/js/morning.js' | relative_url }}" defer></script>
+</body>
+</html>

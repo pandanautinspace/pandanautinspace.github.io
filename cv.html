@@ -1,0 +1,37 @@
+---
+title: Curriculum Vitæ
+permalink: /cv/
+---
+{% assign cv = site.data.cv %}
+<article class="page cv">
+  <h1 class="page-title">Curriculum Vitæ</h1>
+  <p class="lede">{{ cv.basics.summary }}</p>
+  {% if cv.basics.pdf %}<p><a href="{{ cv.basics.pdf | relative_url }}">Download PDF ↓</a></p>{% endif %}
+
+  <h2 class="section-label">Experience</h2>
+  {% for w in cv.work %}
+  <div class="cv-item">
+    <div class="cv-when">{{ w.startDate | date: '%b %Y' }} – {% if w.endDate %}{{ w.endDate | date: '%b %Y' }}{% else %}present{% endif %}</div>
+    <div>
+      <div class="cv-title"><strong>{{ w.position }}</strong>, {% if w.url %}<a href="{{ w.url }}">{{ w.name }}</a>{% else %}{{ w.name }}{% endif %}</div>
+      {% if w.summary %}<p>{{ w.summary }}</p>{% endif %}
+      {% if w.highlights.size > 0 %}<ul>{% for h in w.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <h2 class="section-label">Education</h2>
+  {% for e in cv.education %}
+  <div class="cv-item">
+    <div class="cv-when">{{ e.startDate | date: '%Y' }} – {% if e.endDate %}{{ e.endDate | date: '%Y' }}{% else %}present{% endif %}</div>
+    <div>
+      <div class="cv-title"><strong>{{ e.studyType }}, {{ e.area }}</strong></div>
+      <div>{{ e.institution }}{% if e.score %} · GPA {{ e.score }}{% endif %}</div>
+      {% if e.note %}<p class="muted">{{ e.note }}</p>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <h2 class="section-label">Languages</h2>
+  <p>{% for l in cv.languages %}{{ l.language }} <span class="muted">({{ l.fluency }})</span>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+</article>

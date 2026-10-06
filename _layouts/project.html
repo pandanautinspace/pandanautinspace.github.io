@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="project">
+  <a class="back" href="{{ '/#work' | relative_url }}">← All work</a>
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="lede">{{ page.subtitle }}</p>{% endif %}
+  <p class="meta">
+    {% if page.status %}{{ page.status }}{% else %}{{ page.date | date: '%B %Y' }}{% endif %}
+    {% if page.context %} · {{ page.context }}{% endif %}
+  </p>
+  {% if page.tags.size > 0 %}
+  <ul class="tags">{% for t in page.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+  {% endif %}
+  {% assign slugpath = '/assets/projects/' | append: page.slug %}
+  {% assign v = slugpath | append: '.mp4' %}{% assign j = slugpath | append: '.jpg' %}
+  {% assign has_v = site.static_files | where: "path", v | size %}
+  {% assign has_j = site.static_files | where: "path", j | size %}
+  {% if has_v > 0 %}
+    <video class="hero" src="{{ v | relative_url }}"{% if has_j > 0 %} poster="{{ j | relative_url }}"{% endif %} autoplay loop muted playsinline></video>
+  {% elsif has_j > 0 %}
+    <img class="hero" src="{{ j | relative_url }}" alt="{{ page.title }}">
+  {% endif %}
+  {% if page.gallery %}
+  <div class="gallery">
+    {% for g in page.gallery %}
+      {% assign gp = '/assets/projects/' | append: g.file %}
+      {% assign gx = site.static_files | where: "path", gp | size %}
+      {% if gx > 0 %}
+      <figure>
+        <video src="{{ gp | relative_url }}" autoplay loop muted playsinline></video>
+        <figcaption>{{ g.label }}</figcaption>
+      </figure>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
+  <div class="prose">{{ content }}</div>
+  {% if page.links %}
+  <ul class="links">
+    {% for l in page.links %}<li><a href="{{ l.url }}">{{ l.label }} ↗</a></li>{% endfor %}
+  </ul>
+  {% endif %}
+</article>

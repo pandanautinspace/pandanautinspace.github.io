@@ -1,9 +1,16 @@
 ---
-title: Two Scale Fluid SPH
+title: Two-Scale SPH Fluids
 date: 2025-02-24
-excerpt: Implementation and analysis of classic improvement for Smoothed Particle Hydrodynamics fluid simulation approach. Project for Fundamentals of Computer Graphics course.
-tags: 
-  - Computer Graphics
-  - Physical Simulation
+kind: Course project
+context: Fundamentals of Computer Graphics, IP Paris
+excerpt: Implementing and analyzing a classic two-scale improvement to Smoothed Particle Hydrodynamics fluid simulation.
+tags:
+- Computer Graphics
+- Physical Simulation
 ---
-Implementation and analysis of classic improvement for Smoothed Particle Hydrodynamics fluid simulation approach. Project for Fundamentals of Computer Graphics course.
+
+An implementation and analysis of a classic two-scale extension to Smoothed Particle
+Hydrodynamics (SPH). The idea is to spend fine particles only where the fluid's detail is,
+and use coarse particles everywhere else.
+
+<!-- TODO: a simulation video (this is the one people will click on) and what you found about speed vs. detail. -->

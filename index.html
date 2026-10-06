@@ -1,19 +1,88 @@
 ---
-layout: collection
-paginate: true
-alt_title: "Kenneth Browder"
+layout: default
+title: Kenneth Browder
 image: /assets/images/banner.png
-introduction: |
-    <img style="width: 12.5%; float: right;" alt="picture of kenneth" src="assets/images/linkedin_profile.jpg">
-    Good morning! Currently, I'm a PhD Track Masters Student at IP Paris, studying and working on research in Computer Graphics, Interactive Physical Simulation, and AI. I graduated in 2024 from Grove City College with a dual Bachelors of Science in Computer Science and Mathematics.
-
-    I'm passionate about finding new uses for technology in creative fields. Thus, I'm always interested in talking to current and aspiring creatives, scientists, and engineers. If you're interested in having a chat, message me on [LinkedIn](https://www.linkedin.com/in/kenneth-browder/) or send me an [email](mailto:kendbrowder@gmail.com). You can also find my contact info [here](/contact.txt)
-
-    ## Recent Projects
-entries_layout: list
-collection: projects
-sort_by: date
-sort_order: reverse
 ---
+{% assign cv = site.data.cv %}
+<p class="masthead" aria-hidden="true">kenneth b</p>
+<section class="intro">
+  <img class="portrait" src="{{ '/assets/images/linkedin_profile.jpg' | relative_url }}" alt="Kenneth Browder">
+  <h1 class="greeting">Good morning <span class="sun-emoji">☀️</span></h1>
+  <p class="clock" data-morning>It's always morning somewhere.</p>
+  <p class="bio">
+    I'm Kenneth, a research assistant and master's student in the
+    <a href="https://www.media.mit.edu/groups/viral-communications/overview/">Viral Communications</a>
+    group at the <a href="https://www.media.mit.edu/">MIT Media Lab</a>, working with Andy Lippman.
+  </p>
+  <p class="bio">
+    I work where computer graphics, physical simulation, and machine learning meet, and I like
+    building tools that let people make things they couldn't before. Before MIT I studied
+    Interaction, Graphics &amp; Design at IP Paris (Télécom Paris &amp; École Polytechnique),
+    built a generative-AI creative assistant and computer-vision tools as an ML engineer at PixAI, and got a dual B.S. in Computer
+    Science and Mathematics from Grove City College.
+  </p>
+  <p class="bio">
+    If you're a creative, scientist, or engineer with an idea in this space, I'd love to hear
+    about it. <a href="#contact">Say hello</a>.
+  </p>
+</section>
 
+<section class="now">
+  <h2 class="section-label">Now</h2>
+  <ul class="now-list">
+    {% for item in site.data.now %}
+    <li><span class="now-when">{{ item.when }}</span><span>{{ item.what }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
 
+<section id="work">
+  <h2 class="section-label">Selected work</h2>
+  {% assign featured = site.projects | where_exp: "p", "p.featured != nil" | sort: "featured" %}
+  <ol class="featured">
+    {% for p in featured %}
+    <li>
+      <a class="feature" href="{{ p.url | relative_url }}">
+        {% assign pj = '/assets/projects/' | append: p.slug | append: '.jpg' %}
+        {% assign has_pj = site.static_files | where: "path", pj | size %}
+        {% if has_pj > 0 %}<img src="{{ pj | relative_url }}" alt="" loading="lazy">{% endif %}
+        <span class="feature-meta">{% if p.status %}{{ p.status }}{% else %}{{ p.date | date: '%Y' }}{% endif %}{% if p.kind %} · {{ p.kind }}{% endif %}</span>
+        <span class="feature-title">{{ p.title }}</span>
+        <span class="feature-text">{{ p.excerpt | strip_html | strip }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="experience">
+  <h2 class="section-label">Experience</h2>
+  <ul class="rows">
+    {% for w in cv.work %}
+    <li>
+      <span class="row-when">{{ w.startDate | date: '%Y' }}{% assign sy = w.startDate | date: '%Y' %}{% if w.endDate %}{% assign ey = w.endDate | date: '%Y' %}{% if ey != sy %}–{{ ey }}{% endif %}{% else %}–now{% endif %}</span>
+      <span class="row-what"><strong>{{ w.position }}</strong>, {{ w.name }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="archive">
+  <h2 class="section-label">Everything else</h2>
+  {% assign rest = site.projects | where_exp: "p", "p.featured == nil" | sort: "date" | reverse %}
+  <ul class="rows">
+    {% for p in rest %}
+    <li>
+      <span class="row-when">{{ p.date | date: '%Y' }}</span>
+      <a class="row-what" href="{{ p.url | relative_url }}">{{ p.title }}{% if p.kind %} <span class="muted">· {{ p.kind }}</span>{% endif %}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-label">Contact</h2>
+  <p>The best way to reach me is <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+     I'm also on <a href="{{ site.social.linkedin }}">LinkedIn</a> and
+     <a href="{{ site.social.github }}">GitHub</a>.</p>
+</section>
