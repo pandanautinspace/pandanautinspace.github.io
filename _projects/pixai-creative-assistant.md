@@ -33,4 +33,4 @@ I worked across both the frontend and the backend (200+ commits).
 The hard part was less "call an image model" and more state: keeping a conversation, a set of
 parallel directions, and a brand's locked traits consistent as the user changes their mind.
 
-<!-- TODO: add 1–2 screenshots or a short screen recording once PixAI OKs it. Avoid client names. -->
+
