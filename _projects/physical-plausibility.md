@@ -12,8 +12,8 @@ gallery:
 - { file: physics-rolling-kitchen_billiard.mp4, label: "Rolling · kitchen, billiard ball" }
 - { file: physics-rolling-kitchen_orange.mp4, label: "Rolling · kitchen, orange" }
 - { file: physics-rolling-playroom_train.mp4, label: "Rolling · playroom, train" }
-- { file: physics-rollingv-kitchen_orange.mp4, label: "Rolling with initial velocity · kitchen, orange" }
-- { file: physics-rollingv-playroom_train.mp4, label: "Rolling with initial velocity · playroom, train" }
+- { file: physics-rollingv-kitchen_orange.mp4, label: "V-ramp · kitchen, orange" }
+- { file: physics-rollingv-playroom_train.mp4, label: "V-ramp · playroom, train" }
 - { file: physics-falling_rolling-kitchen_billiard_ball.mp4, label: "Fall then roll · kitchen, billiard ball" }
 - { file: physics-falling_rolling-kitchen_orange.mp4, label: "Fall then roll · kitchen, orange" }
 - { file: physics-falling_rolling-playroom_train.mp4, label: "Fall then roll · playroom, train" }
@@ -41,8 +41,9 @@ simulated ground truth rather than judging how realistic the pixels look.
 
 ## How the benchmark works
 
-The grid above shows the first scene family, **BallScene**: a ball falling, rolling, rolling with
-an initial velocity, or falling and then rolling, across different rooms and objects. Every
+The grid above shows the first scene family, **BallScene**: a ball falling, rolling down a ramp,
+rolling through a V of two ramps set end to end, or falling and then rolling, across
+different rooms and objects. Every
 render comes with **ground-truth position and velocity logged at 100 Hz in metres** (you can
 read gravity straight off it at 9.81 m/s²) and the exact camera parameters. That's what lets
 motion tracked in a generated video be compared with the truth in real units instead of
