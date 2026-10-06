@@ -1,7 +1,5 @@
 /* kennethb.me — minimal, warm, morning */
-/* Helsa Display (demo, free for personal use — fontlot.com/helsa-display-font).
-   The demo replaces 4, hyphen, quotes, brackets, & etc. with a "DEMO" stamp, so those glyphs were
-   stripped from the woff2; the browser draws them in Newsreader instead. */
+/* Helsa Display (ParaType), full version from dafont, subset to Latin. */
 @font-face {
   font-family: "Helsa Display";
   src: url("../fonts/HelsaDisplay-Regular.woff2") format("woff2");
