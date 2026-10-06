@@ -7,13 +7,16 @@ kind: Research
 context: IP Paris
 excerpt: A benchmark that scores image-to-video and world models on physics in metric units, not on how good the pixels look.
 gallery:
-- { file: physics-unity.mp4, label: Unity (ground truth) }
-- { file: physics-veo3-fast.mp4, label: Veo 3 Fast }
-- { file: physics-kling-2.5-turbo.mp4, label: Kling 2.5 Turbo }
-- { file: physics-seedance.mp4, label: Seedance }
-- { file: physics-wan-2.5.mp4, label: Wan 2.5 }
-- { file: physics-wan-2.1.mp4, label: Wan 2.1 }
-- { file: physics-hailuo-02-fast.mp4, label: Hailuo 02 Fast }
+- { file: physics-falling-kitchen_orange.mp4, label: "Falling · kitchen, orange" }
+- { file: physics-falling-playroom_train.mp4, label: "Falling · playroom, train" }
+- { file: physics-rolling-kitchen_billiard.mp4, label: "Rolling · kitchen, billiard ball" }
+- { file: physics-rolling-kitchen_orange.mp4, label: "Rolling · kitchen, orange" }
+- { file: physics-rolling-playroom_train.mp4, label: "Rolling · playroom, train" }
+- { file: physics-rollingv-kitchen_orange.mp4, label: "Rolling with initial velocity · kitchen, orange" }
+- { file: physics-rollingv-playroom_train.mp4, label: "Rolling with initial velocity · playroom, train" }
+- { file: physics-falling_rolling-kitchen_billiard_ball.mp4, label: "Fall then roll · kitchen, billiard ball" }
+- { file: physics-falling_rolling-kitchen_orange.mp4, label: "Fall then roll · kitchen, orange" }
+- { file: physics-falling_rolling-playroom_train.mp4, label: "Fall then roll · playroom, train" }
 tags:
 - Physical Simulation
 - Computer Graphics
@@ -37,6 +40,13 @@ It scores generated video on physics *in metric units*, comparing measured motio
 simulated ground truth rather than judging how realistic the pixels look.
 
 ## How the benchmark works
+
+The grid above shows the first scene family, **BallScene**: a ball falling, rolling, rolling with
+an initial velocity, or falling and then rolling, across different rooms and objects. Every
+render comes with **ground-truth position and velocity logged at 100 Hz in metres** (you can
+read gravity straight off it at 9.81 m/s²) and the exact camera parameters. That's what lets
+motion tracked in a generated video be compared with the truth in real units instead of
+pixels.
 
 - **Scenes.** Physics scenarios built in Unity, each targeting one physical notion. Each one
   comes in several *settings* (physical parameters) and *variants* (textures, background,
