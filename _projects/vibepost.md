@@ -2,10 +2,10 @@
 title: VibePost
 subtitle: From brand guidelines to a ready-to-post ad campaign in one go.
 date: 2025-10-21
-featured: 4
+featured: 6
 kind: Hackathon winner
 context: BLACKBOX AI hackathon at 42 Paris
-excerpt: Upload your brand guidelines and a few reference images, and get back a set of on-brand campaign images, a promo video and copy, ready to post.
+excerpt: "Turns a few brand guidelines and reference images into a small ad campaign of on-brand images, a promo video and copy, built in two hours."
 tags:
 - Generative AI
 - React
