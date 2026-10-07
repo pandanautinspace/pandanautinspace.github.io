@@ -2,10 +2,10 @@
 title: PixAI Creative Assistant
 subtitle: An AI art director that turns a brief into several visual directions at once.
 date: 2026-09-21
-featured: 2
+featured: 4
 kind: Industry
 context: ML Engineer, PixAI
-excerpt: A conversational assistant for brand imagery that plans a brief, fans it out into parallel creative directions, and keeps every result on-brand through house styles and moodboards.
+excerpt: "Helps brand teams explore ideas visually: a conversational assistant that turns one brief into several creative directions at once and keeps every result on-brand."
 tags:
 - Generative AI
 - LLM Agents

@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
   "basics": {
     "name": "Kenneth Browder",
-    "label": "Research Assistant, MIT Media Lab",
+    "label": "Master's student, MIT Media Lab",
     "email": "kendbrowder@gmail.com",
     "url": "https://kennethb.me",
-    "summary": "Research assistant and master's student in the Viral Communications group at the MIT Media Lab. I work across computer graphics, physical simulation, and machine learning, building interactive tools that put deep technology in the hands of creative people.",
+    "summary": "Kenneth Browder is a master's student in the Viral Communications group at the MIT Media Lab, with a background in graphics, physical simulation, and generative AI. His work focuses on creative and fun uses of technology that help people see themselves and others in new ways. Ken is always interested to hear from artists, researchers, and builders about new creative projects that help humans express themselves and understand each other.",
     "location": {
       "city": "Cambridge",
       "region": "MA",

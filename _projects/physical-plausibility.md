@@ -5,7 +5,7 @@ status: Ongoing
 featured: 1
 kind: Research
 context: IP Paris
-excerpt: A benchmark that scores image-to-video and world models on physics in metric units, not on how good the pixels look.
+excerpt: "When an AI video looks real but moves wrong, how wrong is it? A benchmark that scores image-to-video and world models on physics in real units, not on how good the pixels look."
 gallery:
 - { file: physics-falling-kitchen_orange.mp4, label: "Falling · kitchen, orange" }
 - { file: physics-falling-playroom_train.mp4, label: "Falling · playroom, train" }
