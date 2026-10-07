@@ -4,7 +4,7 @@ subtitle: "Shopping online, together."
 date: 2025-10-15
 kind: Course project
 context: "Advanced UI, IP Paris, with Soheil Lotfi and Keryan C."
-featured: 5
+featured: 3
 excerpt: "Online shopping, but with your friends. A Chrome extension that turns Amazon into a shared virtual mall where you can see each other browse and chat in real time."
 tags:
 - Social Computing

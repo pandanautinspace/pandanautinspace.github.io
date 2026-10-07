@@ -2,7 +2,7 @@
 title: Colorful World
 date: 2023-12-18
 kind: Web app
-featured: 3
+featured: 5
 context: "Team project, Web Development, Grove City College"
 subtitle: "Share how you feel as a color."
 excerpt: "A social network with no photos or posts, just colors: write how you feel, and it becomes a color your friends, and a live world map, can see."
