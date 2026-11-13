@@ -40,6 +40,7 @@ defaults:
 
 exclude:
   - interview_transcript_brief.md
+  - old-honors.md
   - README.md
   - Gemfile
   - Gemfile.lock

@@ -127,6 +127,48 @@
       "note": "Summa cum laude."
     }
   ],
+  "awards": [
+    {
+      "title": "Winner, SudoSci",
+      "awarder": "Gemma × Alien AI Hackathon",
+      "date": "2026-07-25"
+    },
+    {
+      "title": "Finalist, Opti",
+      "awarder": "Paris Fintech Hackathon 2026, HEC Paris",
+      "date": "2026-04-26"
+    },
+    {
+      "title": "Winner, VibePost",
+      "awarder": "The AI Collective × BLACKBOX.AI Hackathon, 42 Paris",
+      "date": "2025-10-21"
+    },
+    {
+      "title": "2nd Place, SoccerVision",
+      "awarder": "AI Tinkerers Paris Hackathon (AgentsIRL)",
+      "date": "2025-10-11"
+    },
+    {
+      "title": "PhD Track Scholarship",
+      "awarder": "Institut Polytechnique de Paris",
+      "date": "2024"
+    },
+    {
+      "title": "Swezey–Janicki Research Scholarship",
+      "awarder": "Grove City College",
+      "date": "2023"
+    },
+    {
+      "title": "Trustee Scholarship (full ride)",
+      "awarder": "Grove City College",
+      "date": "2020"
+    },
+    {
+      "title": "National Merit Scholar",
+      "awarder": "National Merit Scholarship Corporation",
+      "date": "2020"
+    }
+  ],
   "languages": [
     {
       "language": "English",
@@ -148,6 +190,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
     "version": "v2.0.0",
-    "lastModified": "2026-10-06"
+    "lastModified": "2026-11-13"
   }
 }

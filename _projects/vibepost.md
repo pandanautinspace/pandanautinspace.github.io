@@ -4,7 +4,7 @@ subtitle: From brand guidelines to a ready-to-post ad campaign in one go.
 date: 2025-10-21
 featured: 6
 kind: Hackathon winner
-context: BLACKBOX AI hackathon at 42 Paris
+context: The AI Collective × BLACKBOX.AI hackathon at 42 Paris
 excerpt: "Turns a few brand guidelines and reference images into a small ad campaign of on-brand images, a promo video and copy, built in two hours."
 tags:
 - Generative AI
@@ -18,7 +18,7 @@ links:
   url: https://github.com/pandanautinspace/ai-ad-campaign-builder
 ---
 
-Winner of the **BLACKBOX AI hackathon at 42 Paris**, a two-hour sprint. VibePost turns a brand's guidelines and a few reference
+Winner of **The AI Collective × BLACKBOX.AI hackathon at 42 Paris**, a two-hour sprint. VibePost turns a brand's guidelines and a few reference
 images into a small ad campaign:
 
 - **Input:** brand guidelines (as text or an uploaded file) plus reference images.

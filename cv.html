@@ -32,6 +32,19 @@ permalink: /cv/
   </div>
   {% endfor %}
 
+  {% if cv.awards.size > 0 %}
+  <h2 class="section-label">Awards</h2>
+  {% for a in cv.awards %}
+  <div class="cv-item">
+    <div class="cv-when">{% if a.date.size == 4 %}{{ a.date }}{% else %}{{ a.date | date: '%b %Y' }}{% endif %}</div>
+    <div>
+      <div class="cv-title"><strong>{{ a.title }}</strong></div>
+      <div>{{ a.awarder }}</div>
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
   <h2 class="section-label">Languages</h2>
   <p>{% for l in cv.languages %}{{ l.language }} <span class="muted">({{ l.fluency }})</span>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
 </article>
